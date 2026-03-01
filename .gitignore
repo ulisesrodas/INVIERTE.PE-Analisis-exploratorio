@@ -1,0 +1,9 @@
+# Credenciales - NUNCA subir al repositorio
+.env
+
+# Datos crudos (archivos pesados)
+data/
+maestro_inversiones_peru.csv
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
