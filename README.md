@@ -1,48 +1,42 @@
-# Análisis de la Inversión Pública en el Perú (Invierte.pe) - ETL y Modelado Relacional
-## 📌 Descripción del Proyecto
-Este proyecto analiza la cartera de proyectos de inversión pública en el Perú mediante la extracción, limpieza, modelado y análisis de datos del sistema Invierte.pe. El flujo de trabajo transforma una base de datos plana descentralizada (25 archivos regionales) en un modelo relacional robusto en PostgreSQL, permitiendo identificar patrones territoriales, sobrecostos y la priorización macroeconómica del Estado.
+<img width="916" height="532" alt="image" src="https://github.com/user-attachments/assets/67c0cbe7-592a-43ad-b72d-19cb7fcdb245" /><img width="917" height="601" alt="image" src="https://github.com/user-attachments/assets/d75b425f-0267-4769-912d-54ff5602a0cf" /># 🇵🇪 Auditoría de la Inversión Pública en el Perú (2020-2024)
 
-## 🛠️ Tecnologías Utilizadas
-* Lenguajes: Python, SQL
+Este proyecto realiza un análisis multidimensional de la ejecución presupuestal del Estado Peruano utilizando el dataset oficial de **Invierte.pe**. El objetivo es identificar ineficiencias, sobrecostos y disparidades territoriales mediante el uso de **SQL (PostgreSQL)** y **Python**.
 
-* Librerías Python: pandas (manipulación de datos), sqlalchemy, os (conexión segura a base de datos)
+El modelo es el siguiente:
+<img width="987" height="402" alt="image" src="https://github.com/user-attachments/assets/f484002a-1430-447d-8966-0c0bd9b4e57a" />
 
-* Base de Datos: PostgreSQL
 
-* Entorno: Jupyter Notebook, pgAdmin 4
+## 📊 Hallazgos Principales
+* **Sobrecostos Críticos:** El sector Educación presenta una desviación presupuestal promedio del **462.6%**.
+<img width="915" height="536" alt="image" src="https://github.com/user-attachments/assets/5a08e314-1288-49a1-9982-ae577671c0b5" />
 
-## ⚙️ Arquitectura y Metodología (Flujo ETL)
-* Extracción y Unificación (Extract): Lectura automatizada de 25 archivos Excel departamentales desde Kaggle utilizando bucles en Python, consolidando la información en un archivo maestro de más de 380,000 registros (maestro_inversiones_peru.csv).
+* **Efecto Callao:** Se identificó una alta concentración de inversión en megaproyectos en el puerto, contrastando con la **atomización del gasto** en regiones como Áncash.
+<img width="917" height="601" alt="image" src="https://github.com/user-attachments/assets/512bd936-538f-469f-90a1-39e7b5a45b88" />
 
-* Transformación y Modelado (Transform): Transición de un dataset plano a un modelo de esquema en estrella. Se crearon dos tablas dimensionales (geografia y sectores) y una tabla de hechos (proyectos), limpiando duplicados, normalizando tipos de datos y asignando llaves primarias (PRIMARY KEY) y foráneas (FOREIGN KEY).
+* **Atomización de las obras en Municipios Locales:** Al haber tantas obras, necesitan mano de obra calificada. Hay un déficit de profesionales en provincias.
+<img width="916" height="532" alt="image" src="https://github.com/user-attachments/assets/b3ed4cd2-7eee-41af-ae19-091c82ea38ff" />
 
-* Carga de Datos (Load): Ingesta masiva hacia PostgreSQL utilizando la función to_sql de SQLAlchemy. Se implementaron buenas prácticas de ciberseguridad utilizando variables de entorno (os.getenv()) para proteger las credenciales de acceso locales.
 
-* Análisis Estratégico (SQL Analytics): Consultas avanzadas en PostgreSQL empleando INNER JOIN, subconsultas, agrupamientos (GROUP BY, HAVING) y funciones de ventana (RANK() OVER) para generar rankings regionales y detectar disparidades presupuestales.
+## 🛠️ Stack Tecnológico
+* **Base de Datos:** PostgreSQL (Modelo Relacional en Estrella).
+* **Lenguaje:** Python 3.x.
+* **Librerías Principales:** `Pandas`, `SQLAlchemy`, `Matplotlib`, `Seaborn`.
+* **Entorno:** Jupyter Notebook / VS Code.
 
-## 📊 Hallazgos Analíticos Clave
-* Hegemonía del Cemento: El 80% del Top 10 de megaproyectos nacionales pertenece al sector Transportes y Comunicaciones (ej. Ferrocarriles interurbanos y Líneas del Metro de Lima), relegando a sectores de primera necesidad como Salud o Educación.
+## 📐 Arquitectura de Datos
+El proyecto implementa un **Star Schema** (Modelo en Estrella) optimizado para analítica (OLAP).
+* **Tabla de Hechos:** `proyectos` (Métricas financieras y de impacto).
+* **Dimensiones:** `geografia`, `sectores`, `ejecutores`.
 
-* El "Efecto Callao": A pesar de tener una baja cantidad de obras activas, la Provincia Constitucional del Callao concentra un costo promedio por proyecto de S/ 28.4 millones, quintuplicando la media nacional, lo que evidencia su rol como nodo exclusivo de mega-infraestructura logística.
+## 📂 Estructura del Repositorio
+* `analysis/`: Notebooks principales (`Final_Analysis.ipynb`) con las visualizaciones.
+* `queries/`: Módulo de Python (`script_queries.py`) con todas las funciones SQL.
+* `images/`: Gráficos generados y diagramas del modelo.
+* `data/`: (Opcional) Diccionario de datos o scripts de carga.
 
-* Disparidades Territoriales: Existe una clara marginación presupuestal hacia las zonas amazónicas y fronterizas (Madre de Dios, Ucayali, Tacna, Tumbes), las cuales ocupan la base del ranking nacional de inversión total frente a la concentración de capital en la costa central.
-
-## 🚀 Instrucciones de Ejecución
-Para replicar este proyecto en tu entorno local, sigue estos pasos:
-
-* Clonar el repositorio:
-
-* Bash
-`git clone https://github.com/tu-usuario/tu-repositorio.git`
-
-* Crear la Base de Datos:
-Abre pgAdmin y ejecuta la primera parte del archivo TRABAJO FINAL - BD INVERSION PUBLICA.sql para crear la base de datos inversion_publica_db y las tablas vacías con sus restricciones.
-
-* Configurar Variables de Entorno:
-Asegúrate de configurar tu contraseña local de PostgreSQL como una variable de entorno en tu sistema. El script de Python buscará la variable configurada (puedes ajustar el nombre en el código).
-
-* Ejecutar el pipeline ETL:
-Abre y ejecuta las celdas de Preprocesamiento.ipynb. Esto procesará los archivos .xlsx de la carpeta /data y poblará las tablas en PostgreSQL.
-
-* Realizar Consultas:
-Vuelve al archivo .sql y ejecuta las consultas analíticas de la sección 2.4 para obtener los resúmenes financieros y operativos.
+## 🚀 Cómo ejecutarlo
+1. Clona el repositorio.
+2. Configura tu base de datos PostgreSQL con el archivo `.sql` provisto.
+3. Crea un archivo `.env` con tus credenciales de base de datos:
+   ```env
+   DB_PASSWORD=tu_contraseña
