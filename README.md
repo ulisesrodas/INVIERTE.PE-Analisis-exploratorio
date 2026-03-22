@@ -1,19 +1,32 @@
-<img width="916" height="532" alt="image" src="https://github.com/user-attachments/assets/67c0cbe7-592a-43ad-b72d-19cb7fcdb245" /><img width="917" height="601" alt="image" src="https://github.com/user-attachments/assets/d75b425f-0267-4769-912d-54ff5602a0cf" /># 🇵🇪 Auditoría de la Inversión Pública en el Perú (2020-2024)
+# Auditoría de la Inversión Pública en el Perú (2020-2024)
 
 Este proyecto realiza un análisis multidimensional de la ejecución presupuestal del Estado Peruano utilizando el dataset oficial de **Invierte.pe**. El objetivo es identificar ineficiencias, sobrecostos y disparidades territoriales mediante el uso de **SQL (PostgreSQL)** y **Python**.
 
+## 👀 Dataset
+
+**Elección del Dataset:**
+Para el presente proyecto se ha seleccionado el dataset "Public Investments in Peru", el cual consolida información del Sistema Nacional de Programación Multianual y Gestión de Inversiones del 2020-2024. La relevancia de este conjunto de datos radica en que permite auditar y comprender la distribución territorial y sectorial de los recursos del Estado. Analizar esta información es clave para identificar disparidades regionales, prioridades reales de política pública y posibles ineficiencias (sobrecostos) en la ejecución de proyectos de inversión.
+
+**Link:** [Dataset: Public Investments in Peru](https://www.kaggle.com/datasets/jenifergrategarro/dataset-public-investments-in-peru/data)
+
+## **Pregunta de Investigación / Problemática:**
+* **¿Cuáles son las principales distorsiones en la ejecución de la inversión pública peruana y cómo afectan estas fallas de planificación a la rentabilidad social y la equidad territorial en el periodo analizado?**
+
 El modelo es el siguiente:
-<img width="987" height="402" alt="image" src="https://github.com/user-attachments/assets/f484002a-1430-447d-8966-0c0bd9b4e57a" />
+
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/f484002a-1430-447d-8966-0c0bd9b4e57a" />
 
 
 ## 📊 Hallazgos Principales
-* **Sobrecostos Críticos:** El sector Educación presenta una desviación presupuestal promedio del **462.6%**.
+* **1. Sobrecostos Críticos:** El sector Educación presenta una desviación presupuestal promedio del **462.6%**.
 <img width="915" height="536" alt="image" src="https://github.com/user-attachments/assets/5a08e314-1288-49a1-9982-ae577671c0b5" />
 
-* **Efecto Callao:** Se identificó una alta concentración de inversión en megaproyectos en el puerto, contrastando con la **atomización del gasto** en regiones como Áncash.
+
+* **2. Efecto Callao:** Se identificó una alta concentración de inversión en megaproyectos en el puerto, contrastando con la **atomización del gasto** en regiones como Áncash.
 <img width="917" height="601" alt="image" src="https://github.com/user-attachments/assets/512bd936-538f-469f-90a1-39e7b5a45b88" />
 
-* **Atomización de las obras en Municipios Locales:** Al haber tantas obras, necesitan mano de obra calificada. Hay un déficit de profesionales en provincias.
+
+* **3. Atomización de las obras en Municipios Locales:** Al haber tantas obras, necesitan mano de obra calificada. Hay un déficit de profesionales en provincias.
 <img width="916" height="532" alt="image" src="https://github.com/user-attachments/assets/b3ed4cd2-7eee-41af-ae19-091c82ea38ff" />
 
 
@@ -39,4 +52,4 @@ El proyecto implementa un **Star Schema** (Modelo en Estrella) optimizado para a
 2. Configura tu base de datos PostgreSQL con el archivo `.sql` provisto.
 3. Crea un archivo `.env` con tus credenciales de base de datos:
    ```env
-   DB_PASSWORD=tu_contraseña
+   DB_PASSWORD=tu variable de entorno local
