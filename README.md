@@ -16,6 +16,8 @@ El modelo es el siguiente:
 
 <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/f484002a-1430-447d-8966-0c0bd9b4e57a" />
 
+* **Tabla de Hechos:** `proyectos` (Métricas financieras y de impacto).
+* **Dimensiones:** `geografia`, `sectores`.
 
 ## 📊 Hallazgos Principales
 * **1. Sobrecostos Críticos:** El sector Educación presenta una desviación presupuestal promedio del **462.6%**.
@@ -35,11 +37,6 @@ El modelo es el siguiente:
 * **Lenguaje:** Python 3.x.
 * **Librerías Principales:** `Pandas`, `SQLAlchemy`, `Matplotlib`, `Seaborn`.
 * **Entorno:** Jupyter Notebook / VS Code.
-
-## 📐 Arquitectura de Datos
-El proyecto implementa un **Star Schema** (Modelo en Estrella) optimizado para analítica (OLAP).
-* **Tabla de Hechos:** `proyectos` (Métricas financieras y de impacto).
-* **Dimensiones:** `geografia`, `sectores`, `ejecutores`.
 
 ## 📂 Estructura del Repositorio
 * `analysis/`: Notebooks principales (`Final_Analysis.ipynb`) con las visualizaciones.
