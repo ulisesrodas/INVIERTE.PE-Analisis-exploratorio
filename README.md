@@ -51,8 +51,8 @@ El modelo es el siguiente:
 * `data/`: (Opcional) Diccionario de datos o scripts de carga.
 
 ## 🚀 Cómo ejecutarlo
-1. Clona el repositorio.
-2. Configura tu base de datos PostgreSQL con el archivo `.sql` provisto.
-3. Crea un archivo `.env` con tus credenciales de base de datos:
-   ```env
-   DB_PASSWORD=tu variable de entorno local
+Si se quiere ver al detalle el proyecto, ver el informe `Final_Analysis.ipynb`. Y para ejecutar dicho informe, ver `script_queries.py`, `creacion_tablas.sql` y `load_data.ipynb`. El procedimiento es el siguiente:
+
+1. Clona el repositorio en tu computadora/laptop.
+2. Configura tu base de datos PostgreSQL con el archivo `.sql` provisto. Es crucial para la creación de tablas.
+3. Variable de entorno: `DB_PASSWORD=tu variable de entorno local`
