@@ -9,7 +9,7 @@ Para el presente proyecto se ha seleccionado el dataset "Public Investments in P
 
 **Link:** [Dataset: Public Investments in Peru](https://www.kaggle.com/datasets/jenifergrategarro/dataset-public-investments-in-peru/data)
 
-## **Pregunta de Investigación / Problemática:**
+## ❓ Pregunta de Investigación / Problemática:
 * **¿Cuáles son las principales distorsiones en la ejecución de la inversión pública peruana y cómo afectan estas fallas de planificación a la rentabilidad social y la equidad territorial en el periodo analizado?**
 
 El modelo es el siguiente:
@@ -20,17 +20,23 @@ El modelo es el siguiente:
 * **Dimensiones:** `geografia`, `sectores`.
 
 ## 📊 Hallazgos Principales
-* **1. Sobrecostos Críticos:** El sector Educación presenta una desviación presupuestal promedio del **462.6%**.
+* **Sobrecostos Críticos:** El sector Educación presenta una desviación presupuestal promedio del **462.6%**.
 <img width="915" height="536" alt="image" src="https://github.com/user-attachments/assets/5a08e314-1288-49a1-9982-ae577671c0b5" />
 
 
-* **2. Efecto Callao:** Se identificó una alta concentración de inversión en megaproyectos en el puerto, contrastando con la **atomización del gasto** en regiones como Áncash.
+* **Efecto Callao:** Se identificó una alta concentración de inversión en megaproyectos en el puerto, contrastando con la **atomización del gasto** en regiones como Áncash.
 <img width="917" height="601" alt="image" src="https://github.com/user-attachments/assets/512bd936-538f-469f-90a1-39e7b5a45b88" />
 
 
-* **3. Atomización de las obras en Municipios Locales:** Al haber tantas obras, necesitan mano de obra calificada. Hay un déficit de profesionales en provincias.
+* **Atomización de las obras en Municipios Locales:** Al haber tantas obras, necesitan mano de obra calificada. Hay un déficit de profesionales en provincias.
 <img width="916" height="532" alt="image" src="https://github.com/user-attachments/assets/b3ed4cd2-7eee-41af-ae19-091c82ea38ff" />
 
+## 🏁 Conclusiones
+**1. Crisis de Planificación y Sobrecostos:** Existe una deficiencia estructural en la elaboración de expedientes técnicos, especialmente en sectores críticos como Educación. El hallazgo de un sobrecosto promedio del 462.6% en este sector revela que el Estado no solo gasta mal, sino que es incapaz de prever contingencias, lo que deriva en una "hemorragia" de recursos que podrían destinarse a cerrar otras brechas sociales.
+
+**2. La Trampa de la Atomización frente a la Concentración:** El análisis del "Efecto Callao" vs. la realidad de Áncash demuestra una gestión territorial esquizofrénica. Mientras algunas regiones fragmentan su presupuesto en miles de micro-obras de bajo impacto (visibilidad política de corto plazo), otras concentran su "riqueza" en un solo megaproyecto, generando una vulnerabilidad financiera extrema donde el desarrollo regional depende del éxito o fracaso de una única obra.
+
+**3. Inequidad en la Rentabilidad Social:** El indicador de Costo por Beneficiario desmitifica la eficiencia del gasto. Se evidencia que sectores estratégicos para el capital humano (Salud y Educación) tienen una rentabilidad social mucho más alta (menor costo por persona) que los sectores de infraestructura pesada. Sin embargo, la centralización en Lima y Callao (casi el 50% de la inversión) demuestra que el Estado sigue priorizando los nodos logísticos de la capital sobre la integración y el bienestar de las periferias fronterizas y amazónicas.
 
 ## 🛠️ Stack Tecnológico
 * **Base de Datos:** PostgreSQL (Modelo Relacional en Estrella).
