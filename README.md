@@ -45,10 +45,10 @@ El modelo es el siguiente:
 * **Entorno:** Jupyter Notebook / VS Code.
 
 ## 📂 Estructura del Repositorio
-* `analysis/`: Notebooks principales (`Final_Analysis.ipynb`) con las visualizaciones.
-* `queries/`: Módulo de Python (`script_queries.py`) con todas las funciones SQL.
-* `images/`: Gráficos generados y diagramas del modelo.
-* `data/`: (Opcional) Diccionario de datos o scripts de carga.
+* `analysis/`: Contiene el informe final `Final_Analysis.ipynb` con las visualizaciones, análisis, explicacione extendidas y conclusiones.
+* `inputs/`: (Opcional). Contiene los archivos xlsx con los que trabajará, pero de todos modos son generados en `load_data.ipynb`.
+* `queries/`: Contiene `script_queries.py` con las funciones SQL a usar. Vital porque las usa el informe `Final_Analysis.ipynb`.
+* `scripts/`: Contiene `load_data.ipynb` (extrae la información de Kaggle) y `Creacion_tablas.sql` (tiene las laves primarias y foráneas).
 
 ## 🚀 Cómo ejecutarlo
 Si se quiere ver al detalle el proyecto, ver el informe `Final_Analysis.ipynb`. Y para ejecutar dicho informe, ver `script_queries.py`, `creacion_tablas.sql` y `load_data.ipynb`. El procedimiento es el siguiente:
