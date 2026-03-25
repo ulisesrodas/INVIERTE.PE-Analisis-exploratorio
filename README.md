@@ -55,8 +55,9 @@ Si bien el dataset proporciona una visión estrictamente financiera y de ejecuci
 * `scripts/`: Contiene `load_data.ipynb` (extrae la información de Kaggle) y `Creacion_tablas.sql` (tiene las laves primarias y foráneas).
 
 ## 🚀 Cómo ejecutarlo
-Si se quiere ver al detalle el proyecto, ver el informe `Final_Analysis.ipynb`. Y para ejecutar dicho informe, ver `script_queries.py`, `creacion_tablas.sql` y `load_data.ipynb`. El procedimiento es el siguiente:
+Si se quiere ver al detalle el proyecto, ver el informe `Final_Analysis.ipynb`. Para ejecutar dicho informe, Tener en cuenta a `script_queries.py` y `load_data.ipynb`. El procedimiento es el siguiente:
 
 1. Clona el repositorio en tu computadora/laptop.
-2. Configura tu base de datos PostgreSQL con el archivo `.sql` provisto. Es crucial para la creación de tablas.
-3. Variable de entorno: `DB_PASSWORD=tu variable de entorno local`
+2. Configura tu base de datos PostgreSQL como  `inversion_publica_db`. Luego, ejecuta `load_data.ipynb`, cambiando tu variable local de entorno `os.getenv`.
+3. En `script_queies.py` están todas las consultas. No es necesario modificarlo. 
+4. Ejecutar `Final_Analysis.ipynb`. Jalará información de `script_queries.py` y `load_data.ipynb`.
