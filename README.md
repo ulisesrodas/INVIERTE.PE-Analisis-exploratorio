@@ -50,15 +50,16 @@ Si bien el dataset proporciona una visión estrictamente financiera y de ejecuci
 * **Entorno:** Jupyter Notebook / VS Code.
 
 ## 📂 Estructura del Repositorio
-* `analysis/`: Contiene el informe final `Final_Analysis.ipynb` con las visualizaciones, análisis, explicacione extendidas y conclusiones.
-* `inputs/`: (Opcional). Contiene los archivos xlsx con los que trabajará, pero de todos modos son generados en `load_data.ipynb`.
-* `queries/`: Contiene `script_queries.py` con las funciones SQL a usar. Vital porque las usa el informe `Final_Analysis.ipynb`.
-* `scripts/`: Contiene `load_data.ipynb` (extrae la información de Kaggle) y `Creacion_tablas.sql` (tiene las laves primarias y foráneas).
+* `analysis/`: Contiene el informe final `Final_Analysis.ipynb` con las visualizaciones, análisis y conclusiones.
+* `inputs/`: (Opcional). Contiene los archivos xlsx, pero de todos modos son generados en `load_data.ipynb`.
+* `queries/`: Contiene `script_queries.py` con las funciones SQL a usar por el informe final.
+* `scripts/`: Contiene `load_data.ipynb` que extrae la información de Kaggle y crea las laves primarias y foráneas de las tablas a usar.
 
 ## 🚀 Cómo ejecutarlo
-Si se quiere ver al detalle el proyecto, ver el informe `Final_Analysis.ipynb`. Para ejecutar dicho informe, Tener en cuenta a `script_queries.py` y `load_data.ipynb`. El procedimiento es el siguiente:
+Si se quiere ver al detalle el proyecto, ver el informe `Final_Analysis.ipynb`. Para ejecutar dicho informe, tener en cuenta a `script_queries.py` y `load_data.ipynb`. El procedimiento es el siguiente:
 
 1. Clona el repositorio en tu computadora/laptop.
-2. Configura tu base de datos PostgreSQL como  `inversion_publica_db`. Luego, ejecuta `load_data.ipynb`, cambiando tu variable local de entorno `os.getenv`.
-3. En `script_queies.py` están todas las consultas. No es necesario modificarlo. 
-4. Ejecutar `Final_Analysis.ipynb`. Jalará información de `script_queries.py` y `load_data.ipynb`.
+2. Configura tu base de datos PostgreSQL como  `inversion_publica_db`.
+3. Ejecuta `load_data.ipynb`, cambiando tu variable local de entorno `os.getenv()` donde sea necesario.
+4. En `script_queies.py` están todas las consultas. No es necesario modificarlo. 
+5. Ejecutar `Final_Analysis.ipynb`. Jalará información de `script_queries.py` y `load_data.ipynb`.
