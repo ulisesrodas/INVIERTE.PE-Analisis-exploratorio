@@ -33,7 +33,7 @@ Si bien el dataset proporciona una visión estrictamente financiera y de ejecuci
 
 
 * **Atomización de las obras en Municipios Locales:** Al haber tantas obras, necesitan mano de obra calificada. Hay un déficit de profesionales en provincias.
-<img width="954" height="449" alt="image" src="https://github.com/user-attachments/assets/a489185c-3ab4-4132-8b6c-d20561a5df85" />
+<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/a489185c-3ab4-4132-8b6c-d20561a5df85" />
 
 
 ## 🏁 Conclusiones
