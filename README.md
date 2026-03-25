@@ -24,16 +24,18 @@ Si bien el dataset proporciona una visión estrictamente financiera y de ejecuci
 
 
 ## 📊 Hallazgos Principales
-* **Sobrecostos Críticos:** El sector Educación presenta una desviación presupuestal promedio del **462.6%**.
+* **Sobrecostos Críticos:** El sector Educación presenta una desviación presupuestal promedio del **462.6%**. Más información en [Gestión](https://gestion.pe/economia/ahora-casi-14-mil-obras-publicas-en-peru-son-mas-caras-que-lo-previsto-al-inicio-noticia/)
 <p align="center"><img width="915" height="536" alt="image" src="https://github.com/user-attachments/assets/5a08e314-1288-49a1-9982-ae577671c0b5" /></p>
+
+
+* **Atomización de las obras en Municipios Locales:** Al haber tantas obras, necesitan mano de obra calificada. Hay un déficit de profesionales en provincias. Más información en [ComexPerú](https://www.comexperu.org.pe/articulo/gestion-municipal-en-2025-el-967-requiere-asistencia-tecnica-o-capacitacion) y [La República](https://especial.larepublica.pe/metro-cuadrado/vivienda-y-construccion/2026/02/03/municipios-con-millones-sin-gastar-por-que-tantas-obras-publicas-siguen-paralizadas-en-el-peru-265410)
+<p align="center"><p align="center"><img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/a489185c-3ab4-4132-8b6c-d20561a5df85" /></p>
 
 
 * **Efecto Callao:** Se identificó una alta concentración de inversión en megaproyectos en el puerto, contrastando con la **atomización del gasto** en regiones como Áncash.
 <p align="center"><img width="917" height="601" alt="image" src="https://github.com/user-attachments/assets/512bd936-538f-469f-90a1-39e7b5a45b88" /></p>
 
 
-* **Atomización de las obras en Municipios Locales:** Al haber tantas obras, necesitan mano de obra calificada. Hay un déficit de profesionales en provincias.
-<p align="center"><p align="center"><img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/a489185c-3ab4-4132-8b6c-d20561a5df85" /></p>
 
 ## 🏁 Conclusiones
 **1. Crisis de Planificación y Sobrecostos:** Existe una deficiencia estructural en la elaboración de expedientes técnicos, especialmente en sectores críticos como Educación. El hallazgo de un sobrecosto promedio del 462.6% en este sector revela que el Estado no solo gasta mal, sino que es incapaz de prever contingencias, lo que deriva en una "hemorragia" de recursos que podrían destinarse a cerrar otras brechas sociales.
