@@ -12,7 +12,7 @@ El análisis se fundamenta en el dataset "Public Investments in Peru", el cual c
   * **Tabla de hechos (`proyectos`):** Contiene las métricas cuantitativas clave como el costo de inversión inicial, el costo actualizado, costo total y el estado de la obra.
   * **Dimensión geográfica (`geografia`):** Permite granular el análisis a nivel de región, provincia y distrito.
   * **Dimensión sectorial (`sectores`):** Categoriza la inversión según la función del Estado.
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/f484002a-1430-447d-8966-0c0bd9b4e57a" />
+<p align="center"><img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/f484002a-1430-447d-8966-0c0bd9b4e57a" /></p>
 
 Si bien el dataset proporciona una visión estrictamente financiera y de ejecución presupuestal, no incluye indicadores demográficos, por lo que el análisis se centra en la eficiencia del gasto y su distribución territorial.
 
@@ -25,16 +25,15 @@ Si bien el dataset proporciona una visión estrictamente financiera y de ejecuci
 
 ## 📊 Hallazgos Principales
 * **Sobrecostos Críticos:** El sector Educación presenta una desviación presupuestal promedio del **462.6%**.
-<img width="915" height="536" alt="image" src="https://github.com/user-attachments/assets/5a08e314-1288-49a1-9982-ae577671c0b5" />
+<p align="center"><img width="915" height="536" alt="image" src="https://github.com/user-attachments/assets/5a08e314-1288-49a1-9982-ae577671c0b5" /></p>
 
 
 * **Efecto Callao:** Se identificó una alta concentración de inversión en megaproyectos en el puerto, contrastando con la **atomización del gasto** en regiones como Áncash.
-<img width="917" height="601" alt="image" src="https://github.com/user-attachments/assets/512bd936-538f-469f-90a1-39e7b5a45b88" />
+<p align="center"><img width="917" height="601" alt="image" src="https://github.com/user-attachments/assets/512bd936-538f-469f-90a1-39e7b5a45b88" /></p>
 
 
 * **Atomización de las obras en Municipios Locales:** Al haber tantas obras, necesitan mano de obra calificada. Hay un déficit de profesionales en provincias.
-<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/a489185c-3ab4-4132-8b6c-d20561a5df85" />
-
+<p align="center"><p align="center"><img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/a489185c-3ab4-4132-8b6c-d20561a5df85" /></p>
 
 ## 🏁 Conclusiones
 **1. Crisis de Planificación y Sobrecostos:** Existe una deficiencia estructural en la elaboración de expedientes técnicos, especialmente en sectores críticos como Educación. El hallazgo de un sobrecosto promedio del 462.6% en este sector revela que el Estado no solo gasta mal, sino que es incapaz de prever contingencias, lo que deriva en una "hemorragia" de recursos que podrían destinarse a cerrar otras brechas sociales.
@@ -51,15 +50,15 @@ Si bien el dataset proporciona una visión estrictamente financiera y de ejecuci
 
 ## 📂 Estructura del Repositorio
 * `analysis/`: Contiene el informe final `Final_Analysis.ipynb` con las visualizaciones, análisis y conclusiones.
-* `inputs/`: (Opcional). Contiene los archivos xlsx, pero de todos modos son generados en `load_data.ipynb`.
+* `inputs/`: Contiene los archivos xlsx de Kaggle, pero igual los generados `load_data.ipynb`.
 * `queries/`: Contiene `script_queries.py` con las funciones SQL a usar por el informe final.
 * `scripts/`: Contiene `load_data.ipynb` que extrae la información de Kaggle y crea las laves primarias y foráneas de las tablas a usar.
 
 ## 🚀 Cómo ejecutarlo
-Si se quiere ver al detalle el proyecto, ver el informe `Final_Analysis.ipynb`. Para ejecutar dicho informe, tener en cuenta a `script_queries.py` y `load_data.ipynb`. El procedimiento es el siguiente:
+Si se quiere ver al detalle el proyecto, ver el informe `Final_Analysis.ipynb`. Para ejecutarlo, tener en cuenta a `script_queries.py` y `load_data.ipynb`. El procedimiento es el siguiente:
 
 1. Clona el repositorio en tu computadora/laptop.
 2. Configura tu base de datos PostgreSQL como  `inversion_publica_db`.
 3. Ejecuta `load_data.ipynb`, cambiando tu variable local de entorno `os.getenv()` donde sea necesario.
 4. En `script_queies.py` están todas las consultas. No es necesario modificarlo. 
-5. Ejecutar `Final_Analysis.ipynb`. Jalará información de `script_queries.py` y `load_data.ipynb`.
+5. Ejecutar `Final_Analysis.ipynb`. Jalará información de `load_data.ipynb` y `script_queries.py`.
