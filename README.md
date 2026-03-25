@@ -50,7 +50,7 @@ Si bien el dataset proporciona una visión estrictamente financiera y de ejecuci
 
 ## 📂 Estructura del Repositorio
 * `analysis/`: Contiene el informe final `Final_Analysis.ipynb` con las visualizaciones, análisis y conclusiones.
-* `inputs/`: Contiene los archivos xlsx de Kaggle, pero igual los generados `load_data.ipynb`.
+* `inputs/`: Contiene los archivos xlsx de Kaggle, pero igual son generados en `load_data.ipynb`.
 * `queries/`: Contiene `script_queries.py` con las funciones SQL a usar por el informe final.
 * `scripts/`: Contiene `load_data.ipynb` que extrae la información de Kaggle y crea las laves primarias y foráneas de las tablas a usar.
 
