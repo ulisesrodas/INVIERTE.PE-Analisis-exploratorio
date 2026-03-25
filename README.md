@@ -33,7 +33,8 @@ Si bien el dataset proporciona una visión estrictamente financiera y de ejecuci
 
 
 * **Atomización de las obras en Municipios Locales:** Al haber tantas obras, necesitan mano de obra calificada. Hay un déficit de profesionales en provincias.
-<img width="916" height="532" alt="image" src="https://github.com/user-attachments/assets/b3ed4cd2-7eee-41af-ae19-091c82ea38ff" />
+<img width="954" height="449" alt="image" src="https://github.com/user-attachments/assets/a489185c-3ab4-4132-8b6c-d20561a5df85" />
+
 
 ## 🏁 Conclusiones
 **1. Crisis de Planificación y Sobrecostos:** Existe una deficiencia estructural en la elaboración de expedientes técnicos, especialmente en sectores críticos como Educación. El hallazgo de un sobrecosto promedio del 462.6% en este sector revela que el Estado no solo gasta mal, sino que es incapaz de prever contingencias, lo que deriva en una "hemorragia" de recursos que podrían destinarse a cerrar otras brechas sociales.
