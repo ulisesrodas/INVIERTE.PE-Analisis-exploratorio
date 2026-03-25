@@ -2,22 +2,26 @@
 
 Este proyecto realiza un análisis multidimensional de la ejecución presupuestal del Estado Peruano utilizando el dataset oficial de **Invierte.pe**. El objetivo es identificar ineficiencias, sobrecostos y disparidades territoriales mediante el uso de **SQL (PostgreSQL)** y **Python**.
 
-## 👀 Dataset
+##  Descripción del dataset
 
-**Elección del Dataset:**
-Para el presente proyecto se ha seleccionado el dataset "Public Investments in Peru", el cual consolida información del Sistema Nacional de Programación Multianual y Gestión de Inversiones del 2020-2024. La relevancia de este conjunto de datos radica en que permite auditar y comprender la distribución territorial y sectorial de los recursos del Estado. Analizar esta información es clave para identificar disparidades regionales, prioridades reales de política pública y posibles ineficiencias (sobrecostos) en la ejecución de proyectos de inversión.
+El análisis se fundamenta en el dataset "Public Investments in Peru", el cual consolida información del Sistema Nacional de Programación Multianual y Gestión de Inversiones del 2020-2024. La relevancia de este conjunto de datos radica en que permite auditar y comprender la distribución territorial y sectorial de los recursos del Estado. Analizar esta información es clave para identificar disparidades regionales, prioridades reales de política pública y posibles ineficiencias (sobrecostos) en la ejecución de proyectos de inversión.
+
+* **Periodo de información:** El dataset abarca los proyectos de inversión pública registrados y actualizados en el periodo **2020 - 2024**.
+* **Volumen de datos:** Consta de aproximadamente 381,273 registros consolidados, a partir de 25 archivos de Excel unificados.
+* **Estructura:** La base de datos se ha modelado en un esquema de estrella, contando con:
+  * **Tabla de hechos (`proyectos`):** Contiene las métricas cuantitativas clave como el costo de inversión inicial, el costo actualizado, costo total y el estado de la obra.
+  * **Dimensión geográfica (`geografia`):** Permite granular el análisis a nivel de región, provincia y distrito.
+  * **Dimensión sectorial (`sectores`):** Categoriza la inversión según la función del Estado.
+<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/f484002a-1430-447d-8966-0c0bd9b4e57a" />
+
+Si bien el dataset proporciona una visión estrictamente financiera y de ejecución presupuestal, no incluye indicadores demográficos, por lo que el análisis se centra en la eficiencia del gasto y su distribución territorial.
 
 **Link:** [Dataset: Public Investments in Peru](https://www.kaggle.com/datasets/jenifergrategarro/dataset-public-investments-in-peru/data)
 
 ## ❓ Pregunta de Investigación / Problemática:
 * **¿Cuáles son las principales distorsiones en la ejecución de la inversión pública peruana y cómo afectan estas fallas de planificación a la rentabilidad social y la equidad territorial en el periodo analizado?**
 
-El modelo es el siguiente:
 
-<img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/f484002a-1430-447d-8966-0c0bd9b4e57a" />
-
-* **Tabla de Hechos:** `proyectos` (Métricas financieras y de impacto).
-* **Dimensiones:** `geografia`, `sectores`.
 
 ## 📊 Hallazgos Principales
 * **Sobrecostos Críticos:** El sector Educación presenta una desviación presupuestal promedio del **462.6%**.
