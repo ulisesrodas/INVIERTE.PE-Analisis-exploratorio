@@ -12,7 +12,7 @@ El análisis se fundamenta en el dataset "Public Investments in Peru", el cual c
   * **Tabla de hechos (`proyectos`):** Contiene las métricas cuantitativas clave como el costo de inversión inicial, el costo actualizado, costo total y el estado de la obra.
   * **Dimensión geográfica (`geografia`):** Permite granular el análisis a nivel de región, provincia y distrito.
   * **Dimensión sectorial (`sectores`):** Categoriza la inversión según la función del Estado.
-<p align="center"><img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/f484002a-1430-447d-8966-0c0bd9b4e57a" /></p>
+<p align="center"><img width="675" height="300" alt="image" src="https://github.com/user-attachments/assets/f484002a-1430-447d-8966-0c0bd9b4e57a" /></p>
 
 Si bien el dataset proporciona una visión estrictamente financiera y de ejecución presupuestal, no incluye indicadores demográficos, por lo que el análisis se centra en la eficiencia del gasto y su distribución territorial.
 
@@ -25,11 +25,11 @@ Si bien el dataset proporciona una visión estrictamente financiera y de ejecuci
 
 ## 📊 Hallazgos Principales
 * **Sobrecostos Críticos:** El sector Educación presenta una desviación presupuestal promedio del **462.6%**. Más información en [Gestión](https://gestion.pe/economia/ahora-casi-14-mil-obras-publicas-en-peru-son-mas-caras-que-lo-previsto-al-inicio-noticia/)
-<p align="center"><img width="915" height="536" alt="image" src="https://github.com/user-attachments/assets/5a08e314-1288-49a1-9982-ae577671c0b5" /></p>
+<p align="center"><img width="800" height="450" alt="image" src="https://github.com/user-attachments/assets/5a08e314-1288-49a1-9982-ae577671c0b5" /></p>
 
 
 * **Atomización de las obras en Municipios Locales:** Al haber tantas obras, necesitan mano de obra calificada. Hay un déficit de profesionales en provincias. Más información en [ComexPerú](https://www.comexperu.org.pe/articulo/gestion-municipal-en-2025-el-967-requiere-asistencia-tecnica-o-capacitacion) y [La República](https://especial.larepublica.pe/metro-cuadrado/vivienda-y-construccion/2026/02/03/municipios-con-millones-sin-gastar-por-que-tantas-obras-publicas-siguen-paralizadas-en-el-peru-265410)
-<p align="center"><p align="center"><img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/a489185c-3ab4-4132-8b6c-d20561a5df85" /></p>
+<p align="center"><p align="center"><img width="805" height="390" alt="image" src="https://github.com/user-attachments/assets/a489185c-3ab4-4132-8b6c-d20561a5df85" /></p>
 
 
 * **Efecto Callao:** Se identificó una alta concentración de inversión en megaproyectos en el puerto, contrastando con la **atomización del gasto** en regiones como Áncash.
